@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Habit Tracker</h1>
+
+    <div class="input-section">
+      <input id="habitInput" placeholder="Enter habit..." />
+      <button onclick="addHabit()">Add</button>
+    </div>
+
+    <div id="selectedDate">📅 Today</div>
+    <div id="calendar" class="calendar"></div>
+
+    <div id="habitsList"></div>
+
+    <div class="stats">
+      <div>✅ <span id="completedStat">0</span> Done</div>
+      <div>📋 <span id="totalStat">0</span> Total</div>
+      <div>📈 <span id="percentStat">0%</span></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
